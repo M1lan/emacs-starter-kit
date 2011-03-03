@@ -76,4 +76,16 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+
+;; mystuff
+
+(require 'auto-complete)
+(auto-complete-mode 1)
+(recentf-mode 1)
+(setq browse-url-browser-function 'browse-url-generic browse-url-generic-program "/usr/bin/conkeror")
+ (put 'narrow-to-region 'disabled nil)
+(put 'scroll-left 'disabled nil)
+(server-start)
+
+
 ;;; init.el ends here

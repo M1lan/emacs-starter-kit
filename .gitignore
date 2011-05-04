@@ -22,3 +22,6 @@ tramp
 \#*
 history
 /ac-comphist.dat
+/core
+/.#minimal.el
+/minimal.el~

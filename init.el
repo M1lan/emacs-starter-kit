@@ -34,6 +34,7 @@
 (dolist (source '(("technomancy" . "http://repo.technomancy.us/emacs/")
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 (require 'starter-kit-elpa)
 

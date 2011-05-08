@@ -52,6 +52,7 @@
 (setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
 (require 'slime)
 (slime-setup)
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
 
 ;; auto-install from emacswiki
 (load-file "/home/milan/.emacs.d/milan/auto-install.el")

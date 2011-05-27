@@ -49,7 +49,7 @@
 
 ;; set up slime
 (add-to-list 'load-path "~/mysrc/slime/")  ; your SLIME directory
-(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
+(setq inferior-lisp-program "/usr/local/bin/sbcl") ; your Lisp system
 (require 'slime)
 (slime-setup)
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
@@ -85,4 +85,4 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'scroll-left 'disabled nil)
 
-(server-start)
+;;(server-start)

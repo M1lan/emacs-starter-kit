@@ -86,7 +86,16 @@
 (setq browse-url-browser-function 'browse-url-generic browse-url-generic-program "/usr/bin/conkeror")
  (put 'narrow-to-region 'disabled nil)
 (put 'scroll-left 'disabled nil)
+
+;; auto-install from emacswiki
+(require 'auto-install)
+(setq auto-install-directory "~/.emacs.d/milan/auto-install/")
+;;(auto-install-update-emacswiki-package-name t)
+;;(add-to-list 'load-path "~/.emacs.d/milan/auto-install/")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/milan/auto-install/"))
+
 (server-start)
 
 
 ;;; init.el ends here
+(put 'downcase-region 'disabled nil)

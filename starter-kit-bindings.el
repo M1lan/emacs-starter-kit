@@ -60,7 +60,7 @@
 (global-set-key (kbd "C-x C-h") 'view-url)
 
 ;; Help should search more than just commands
-(global-set-key (kbd "C-h a") 'apropos)
+(global-set-key (kbd "<f1> a") 'apropos)
 
 ;; Should be able to eval-and-replace anywhere.
 (global-set-key (kbd "C-c e") 'eval-and-replace)

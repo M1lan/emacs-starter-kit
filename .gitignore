@@ -26,3 +26,4 @@ history
 /.#minimal.el
 /minimal.el~
 /%backup%~
+/realinit.el~

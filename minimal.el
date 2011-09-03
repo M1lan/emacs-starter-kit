@@ -31,8 +31,8 @@
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
 ;; colour scheme
-(load-file "/home/milan/.emacs.d/milan/color-theme-solarized.el")
-(color-theme-solarized "dark")
+;;(load-file "/home/milan/.emacs.d/milan/color-theme-solarized.el")
+;;(color-theme-solarized "dark")
 
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)

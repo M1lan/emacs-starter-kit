@@ -39,6 +39,9 @@
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-h") 'backward-delete-char) 
 
+;; Start eshell or switch to it if it's active.
+(global-set-key (kbd "C-x m") 'eshell)
+
 ;; cough.
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq custom-file (concat dotfiles-dir "custom.el"))

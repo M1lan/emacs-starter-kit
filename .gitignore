@@ -27,3 +27,5 @@ history
 /minimal.el~
 /%backup%~
 /realinit.el~
+/octave-core
+/abbrev_defs

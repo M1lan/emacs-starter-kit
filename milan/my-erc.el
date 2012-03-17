@@ -17,17 +17,19 @@
       ;; connect to bitlbee for IM
       (erc :server "localhost" :port 6667 :nick "milan" :full-name "milan")
       ;; connect to irssi proxy for IRC; passwords are fake
-      (erc :server "krylon" :port 2777 :nick "milan" :password "27olafkeiten" :full-name "milan")
+      (erc :server "krylon" :port 2776 :nick "milan" :password "27olafkeiten" :full-name "milan")
+      (erc :server "krylon" :port 2775 :nick "milan" :password "27olafkeiten" :full-name "milan")
       (erc :server "krylon" :port 2778 :nick "milan" :password "27olafkeiten" :full-name "milan"))))
 
 (erc-spelling-mode 1)
 
-(require 'notifications)
-(defun erc-global-notify (match-type nick message)
-  "Notify when a message is recieved."
-  (notifications-notify
-   :title nick
-   :body message
-   :app-icon "/home/milan/notification-message-im.svg"
-   :urgency 'low))
-(add-hook 'erc-text-matched-hook 'erc-global-notify)
+
+;; (require 'notifications)
+;; (defun erc-global-notify (match-type nick message)
+;;   "Notify when a message is received."
+;;   (notifications-notify
+;;    :title nick
+;;    :body message
+;;    :app-icon "/home/milan/notification-message-im.svg"
+;;    :urgency 'low))
+;; (add-hook 'erc-text-matched-hook 'erc-global-notify)
